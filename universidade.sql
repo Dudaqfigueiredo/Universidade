@@ -176,9 +176,9 @@ DROP TABLE IF EXISTS `matricula`;
 CREATE TABLE `matricula` (
   `CPF_aluno` varchar(14) DEFAULT NULL,
   `cod_disc` int DEFAULT NULL,
-  `P1` decimal(4,0) DEFAULT NULL,
-  `P2` decimal(4,0) DEFAULT NULL,
-  `media` decimal(4,0) DEFAULT NULL,
+  `P1` decimal(4,2) DEFAULT NULL,
+  `P2` decimal(4,2) DEFAULT NULL,
+  `media` decimal(4,2) DEFAULT NULL,
   `situação` varchar(10) DEFAULT NULL,
   `reprovações` int DEFAULT NULL,
   KEY `CPF_aluno` (`CPF_aluno`),
