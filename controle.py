@@ -1,6 +1,5 @@
 from PyQt5 import  uic,QtWidgets
 import mysql.connector
-import sqlite3
 
 banco = mysql.connector.connect(
     host="localhost",
@@ -19,7 +18,7 @@ def TelaMenu():
     cursor = banco.cursor()
     
     try:
-        comando_SQL = "select senha from login where usuário='{}';".format(nome_usuario)
+        comando_SQL = "select senha from login where usuário='{}'".format(nome_usuario)
         cursor.execute(comando_SQL)
         dados_lidos = cursor.fetchall()
         login.close()
