@@ -30,6 +30,8 @@ def TelaMenu():
         login.close()
         Menu.show()
     else :
+        login.close()
+        login.show()
         login.label_6.setText("Dados de login incorretos!")
 
 def Adicionar_Dados():
