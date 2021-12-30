@@ -12,6 +12,9 @@ banco = mysql.connector.connect( #varivel com uma instancia do mysql connector c
 chaveprimaria= 0
 chaveprimaria2= 0
 
+#O banco já possui trigger que pega a nota da p1 e da p2 do aluno em matricula, mostra a média, mostra se for aprovadou ou reprovado.
+#Em caso de 3 reprovações em uma disciplina, o aluno deixa de ser ativo e é "jubilado"
+
 def TelaMenu():
     login.label_6.setText("")
     #Adicionando em variáveis os textos digitados nas caixas de texto
