@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CREATE DATABASE  IF NOT EXISTS `universidade` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `universidade`;
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
@@ -6,6 +7,17 @@ USE `universidade`;
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
+=======
+
+CREATE DATABASE  IF NOT EXISTS `universidade` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `universidade`;
+-- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
+--
+-- Host: localhost    Database: universidade
+-- ------------------------------------------------------
+-- Server version	8.0.27
+
+>>>>>>> 4f860215176ec60d6c0d5130f32a5d7025fb992d
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -175,9 +187,15 @@ DROP TABLE IF EXISTS `matricula`;
 CREATE TABLE `matricula` (
   `CPF_aluno` varchar(14) DEFAULT NULL,
   `cod_disc` int DEFAULT NULL,
+<<<<<<< HEAD
   `P1` decimal(4,0) DEFAULT NULL,
   `P2` decimal(4,0) DEFAULT NULL,
   `media` decimal(4,0) DEFAULT NULL,
+=======
+  `P1` decimal(4,2) DEFAULT NULL,
+  `P2` decimal(4,2) DEFAULT NULL,
+  `media` decimal(4,2) DEFAULT NULL,
+>>>>>>> 4f860215176ec60d6c0d5130f32a5d7025fb992d
   `situação` varchar(10) DEFAULT NULL,
   `reprovações` int DEFAULT NULL,
   KEY `CPF_aluno` (`CPF_aluno`),
@@ -578,4 +596,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+<<<<<<< HEAD
 -- Dump completed on 2021-11-01 11:01:47
+=======
+-- Dump completed on 2021-11-01  0:54:42
+>>>>>>> 4f860215176ec60d6c0d5130f32a5d7025fb992d
