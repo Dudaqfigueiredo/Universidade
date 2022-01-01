@@ -11,7 +11,7 @@ Para a criação do banco de dados, você pode ir no arquivo universidade.sql de
 2. Banco de dados: MySQL
 3. Editor de texto: Visual Studio Code
 4. Python
-5. Biblioteca para conectar o banco de dados com python: pip install mysql-connector-python
+5. Biblioteca para conectar o banco de dados com python: pip install mysql-connector-python.
 
 <h32>Fotos do projeto:</h2>
 
